@@ -230,7 +230,7 @@
 // ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┬──────────┬──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
     &kp LCTRL  &kp Z      &td_x_mac  &td_c_mac  &td_v_mac  &kp B      &kp C_MUTE  &kp C_PP  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp BSLH
 // ╰──────────┴──────────┼──────────┼──────────┼──────────┼──────────┼──────────┴──────────┴──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                          &trans   &lt NAV BSPC &lt MOUSE TAB &mo ADJUST  &none                  &none  &lt SYM ENTER &lt NUM SPACE &df BASEW
+                          &trans   &lt NAV BSPC &lt MOUSE TAB &mo ADJUST  &none                  &none  &lt SYM ENTER &lt NUM SPACE &to BASEW
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────┴──────────╯
             >;
         };
@@ -248,7 +248,7 @@
 // ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┬──────────┬──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
     &kp LCTRL  &kp Z      &td_x_win  &td_c_win  &td_v_win  &kp B      &kp C_MUTE  &kp C_PP  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp BSLH
 // ╰──────────┴──────────┼──────────┼──────────┼──────────┼──────────┼──────────┴──────────┴──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                          &trans   &lt NAV BSPC &lt MOUSE TAB &mo ADJUST  &none                  &none  &lt SYM ENTER &lt NUM SPACE &df BASE
+                          &trans   &lt NAV BSPC &lt MOUSE TAB &mo ADJUST  &none                  &none  &lt SYM ENTER &lt NUM SPACE &to BASE
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────┴──────────╯
             >;
         };
