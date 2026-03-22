@@ -149,6 +149,13 @@
         //   - hold-trigger-key-positions: left HRMs only fire when right-hand keys are involved and vice versa
         //   - hold-trigger-on-release: pairs with above for reliable one-shot feel
         //   - 280ms tapping term: safe to go longer because idle guard handles fast typing
+        hyp: hyper {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor              = "hold-preferred";
+            tapping-term-ms     = <200>;
+            bindings            = <&kp>, <&kp>;
+        };        
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -230,7 +237,7 @@
 // ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┬──────────┬──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
     &kp LCTRL  &kp Z      &td_x_mac  &td_c_mac  &td_v_mac  &kp B      &kp C_MUTE  &kp C_PP  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp BSLH
 // ╰──────────┴──────────┼──────────┼──────────┼──────────┼──────────┼──────────┴──────────┴──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                          &trans   &lt NAV BSPC &lt MOUSE TAB &mo ADJUST  &none                  &none  &lt SYM ENTER &lt NUM SPACE &to BASEW
+                          &mo ADJUST   &none &hyp LS(LC(LA(LGUI))) NONE &lt NAV BSPC &lt MOUSE TAB                  &lt SYM ENTER &lt NUM SPACE &none &none &to BASEW
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────┴──────────╯
             >;
         };
@@ -248,7 +255,7 @@
 // ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┬──────────┬──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
     &kp LCTRL  &kp Z      &td_x_win  &td_c_win  &td_v_win  &kp B      &kp C_MUTE  &kp C_PP  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp BSLH
 // ╰──────────┴──────────┼──────────┼──────────┼──────────┼──────────┼──────────┴──────────┴──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                          &trans   &lt NAV BSPC &lt MOUSE TAB &mo ADJUST  &none                  &none  &lt SYM ENTER &lt NUM SPACE &to BASE
+                          &mo ADJUST   &none &hyp LS(LC(LA(LGUI))) NONE &lt NAV BSPC &lt MOUSE TAB                  &lt SYM ENTER &lt NUM SPACE &none &none &to BASE
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────┴──────────╯
             >;
         };
