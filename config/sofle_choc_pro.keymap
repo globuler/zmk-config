@@ -69,6 +69,7 @@
 #define KEYS_L  0  1  2  3  4  5  12 13 14 15 16 17  24 25 26 27 28 29  36 37 38 39 40 41
 #define KEYS_R  6  7  8  9 10 11  18 19 20 21 22 23  30 31 32 33 34 35  44 45 46 47 48 49
 #define THUMBS 50 51 52 53 54 55 56 57 58 59
+#define HYPER LS(LC(LA(LGUI)))
 
 / {
     // ─── Combos ───────────────────────────────────────────────────────────────
@@ -237,7 +238,7 @@
 // ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┬──────────┬──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
     &kp LCTRL  &kp Z      &td_x_mac  &td_c_mac  &td_v_mac  &kp B      &kp C_MUTE  &kp C_PP  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp BSLH
 // ╰──────────┴──────────┼──────────┼──────────┼──────────┼──────────┼──────────┴──────────┴──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                          &mo ADJUST   &none &hyp LS(LC(LA(LGUI))) NONE &lt NAV BSPC &lt MOUSE TAB                  &lt SYM ENTER &lt NUM SPACE &none &none &to BASEW
+                          &mo ADJUST   &none &hyp HYPER LSHFT &lt NAV BSPC &lt MOUSE TAB                  &lt SYM ENTER &lt NUM SPACE &none &none &to BASEW
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────┴──────────╯
             >;
         };
@@ -255,7 +256,7 @@
 // ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┬──────────┬──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
     &kp LCTRL  &kp Z      &td_x_win  &td_c_win  &td_v_win  &kp B      &kp C_MUTE  &kp C_PP  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp BSLH
 // ╰──────────┴──────────┼──────────┼──────────┼──────────┼──────────┼──────────┴──────────┴──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                          &mo ADJUST   &none &hyp LS(LC(LA(LGUI))) NONE &lt NAV BSPC &lt MOUSE TAB                  &lt SYM ENTER &lt NUM SPACE &none &none &to BASE
+                          &mo ADJUST   &none &hyp HYPER LSHFT &lt NAV BSPC &lt MOUSE TAB                  &lt SYM ENTER &lt NUM SPACE &none &none &to BASE
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────┴──────────╯
             >;
         };
