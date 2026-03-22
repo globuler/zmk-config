@@ -1,21 +1,21 @@
 /*
- * sofle_choc_pro_right.overlay
- * Overrides for Sofle Choc Pro BT right half:
+ * sofle_choc_pro_left.overlay
+ * Overrides for Sofle Choc Pro BT left half:
  *   - Disable encoder (physical key in that position, not a rotary encoder)
  *   - Disable underglow LED strip (RGB not used with Prospector dongle topology)
  */
 
 /* Disable encoder — key is wired there instead */
-&right_encoder {
+&left_encoder {
     status = "disabled";
 };
 
-/* Disable WS2812 LED strip driver */
+/* Disable WS2812 LED strip driver and remove from chosen */
 &spi3 {
     status = "disabled";
+    /delete-node/ ws2812@0;
 };
 
-/* Remove underglow from chosen so ZMK doesn't try to initialize it */
 / {
     chosen {
         /delete-property/ zmk,underglow;
