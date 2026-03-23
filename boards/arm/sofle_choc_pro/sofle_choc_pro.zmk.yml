@@ -12,6 +12,8 @@ outputs:
   - usb
   - ble
 url: https://keebart.com/products/sofle-wireless
+soc:
+  - nrf52840
 siblings:
   - sofle_choc_pro_left
   - sofle_choc_pro_right
