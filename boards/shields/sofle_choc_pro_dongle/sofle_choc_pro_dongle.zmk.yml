@@ -1,0 +1,8 @@
+
+file_format: "1"
+id: sofle_choc_pro_dongle
+name: Sofle Choc Pro Dongle
+type: shield
+url: https://keebart.com/products/sofle-wireless
+requires:
+  - seeeduino_xiao_ble
