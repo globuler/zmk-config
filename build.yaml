@@ -1,13 +1,16 @@
 ---
-# Sofle Choc Pro BT — Prospector dongle build
-# No screens, no ZMK Studio
 include:
   - board: sofle_choc_pro_left
   - board: sofle_choc_pro_right
-  # - board: prospector
- 
-  # Settings reset — flash to both halves to clear stuck BT pairings
+
+  # Prospector dongle
+  - board: seeeduino_xiao_ble
+    shield: sofle_choc_pro_dongle dongle_screen
+
+  # Settings reset
   - board: sofle_choc_pro_left
     shield: settings_reset
   - board: sofle_choc_pro_right
+    shield: settings_reset
+  - board: seeeduino_xiao_ble
     shield: settings_reset
